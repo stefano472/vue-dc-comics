@@ -1,8 +1,8 @@
 <template>
-  <div class="hello">
-    <h1> Hola </h1>
+  <main>
+    <h1>--&gt; Content goes here &lt;-- </h1>
     
-  </div>
+  </main>
 </template>
 
 <script>
