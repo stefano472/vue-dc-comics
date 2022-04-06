@@ -152,7 +152,7 @@ footer {
   background-image: url("../assets/dc-logo-bg.png");
   background-repeat: no-repeat;
   background-position: center right;
-  background-size: 50%;
+  background-size: 45%;
   &>div{
     padding-bottom: 1.5rem;
   }
@@ -192,7 +192,7 @@ button {
   font-weight: 600;
   cursor: pointer;
   border: 2px solid #008dff;
-  border-radius: 3px;
+  border-radius: 2px;
   &:hover {
     background: #008dff;
   }

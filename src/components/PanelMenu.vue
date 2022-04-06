@@ -53,17 +53,17 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
   li:last-child {
-    height: 3rem;
+    height: 3.5rem;
     display: flex;
     img {
       height: 1.7rem;
     }
   }
   li {
-    border: 0.25rem solid transparent;
-    border-radius: 5px;
+    border: 0.5rem solid transparent;
+    border-radius: 1px;
     &:hover {
       // box-shadow: inset 0 2px 0 0 white;
       outline: 2px solid white;

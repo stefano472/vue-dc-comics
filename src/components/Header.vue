@@ -47,6 +47,11 @@
 <script>
 export default {
   name: 'HeaderComponents',
+  // data() {
+  //   return {
+  //     menuItem: ["character", "comics", "movies", "tv", "games", "collectibles", "videos", "fans", "news", "shop"]
+  //   }
+  // }
 }
 </script>
 
