@@ -148,11 +148,11 @@ footer {
 .hero-footer {
   padding: 1rem 0;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   background-image: url("../assets/dc-logo-bg.png");
   background-repeat: no-repeat;
   background-position: center right;
-  background-size: 45%;
+  background-size: 450px;
   &>div{
     padding-bottom: 1.5rem;
   }

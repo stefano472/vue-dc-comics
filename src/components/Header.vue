@@ -8,7 +8,10 @@
         </div>
         <nav>
           <ul class="menu">
-            <li>
+            <li v-for="link in headerMenu" :key="link" :class="link==='comics'? 'active':''">
+              <a href="#"> {{ link }} </a>
+            </li>
+            <!-- <li>
               <a href="#">character</a>
             </li>
             <li class="active">
@@ -37,7 +40,7 @@
             </li>
             <li>
               <a href="#">shop</a>
-            </li>
+            </li> -->
           </ul>
         </nav>
       </div>
@@ -47,11 +50,11 @@
 <script>
 export default {
   name: 'HeaderComponents',
-  // data() {
-  //   return {
-  //     menuItem: ["character", "comics", "movies", "tv", "games", "collectibles", "videos", "fans", "news", "shop"]
-  //   }
-  // }
+  data() {
+    return {
+      headerMenu: ["character", "comics", "movies", "tv", "games", "collectibles", "videos", "fans", "news", "shop"]
+    }
+  }
 }
 </script>
 

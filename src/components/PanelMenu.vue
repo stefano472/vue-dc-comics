@@ -65,7 +65,6 @@ export default {
     border: 0.5rem solid transparent;
     border-radius: 1px;
     &:hover {
-      // box-shadow: inset 0 2px 0 0 white;
       outline: 2px solid white;
     }
   }
