@@ -168,6 +168,9 @@ footer {
       color: #999;
       text-decoration: none;
       font-size: 0.8rem;
+      &:hover {
+        color: #008dff;
+      }
     }
   }
 }
@@ -188,8 +191,11 @@ button {
   color: white;
   font-weight: 600;
   cursor: pointer;
-  border: none;
-  outline: 2px solid #008dff;
+  border: 2px solid #008dff;
+  border-radius: 3px;
+  &:hover {
+    background: #008dff;
+  }
 }
 
 .contacts {
@@ -210,6 +216,9 @@ button {
     }
     img {
       height: 1.8rem;
+      &:hover {
+        opacity: 0.4;
+      }
     }
   }
 }

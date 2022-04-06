@@ -54,8 +54,20 @@ export default {
   justify-content: space-around;
   align-items: center;
   padding: 2rem 0;
-  li:last-child img {
-    height: 1.7rem;
+  li:last-child {
+    height: 3rem;
+    display: flex;
+    img {
+      height: 1.7rem;
+    }
+  }
+  li {
+    border: 0.25rem solid transparent;
+    border-radius: 5px;
+    &:hover {
+      // box-shadow: inset 0 2px 0 0 white;
+      outline: 2px solid white;
+    }
   }
   a {
     color: white;

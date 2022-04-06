@@ -1,15 +1,17 @@
 <template>
     <header>
       <div class="container">
-        <div class="logo">
-          <img src="../assets/dc-logo.png" alt="logo">
+        <div class="header-logo">
+          <a href="">
+            <img src="../assets/dc-logo.png" alt="logo">
+          </a>
         </div>
         <nav>
           <ul class="menu">
             <li>
               <a href="#">character</a>
             </li>
-            <li>
+            <li class="active">
               <a href="#">comics</a>
             </li>
             <li>
@@ -64,12 +66,45 @@ img {
   list-style-type: none;
   display: flex;
   gap: 1rem;
+  position: relative;
+  
   a{
     color: #2c3e50;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.9rem;
     font-weight: 700;
+    &:hover {
+      color: #0282f9;
+    }
   }
 }
+
+li {
+  position: relative;
+  &::before {
+    position:absolute;
+    content: '';
+    bottom: -2.9rem;
+    width: 100%;
+    height: 4px;
+    background: #0282f9;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform .3s ease-in-out;
+  }
+  &:hover::before {
+    transform: scaleY(1);
+  }
+}
+
+.active {
+  a {
+    color: #0282f9;
+  }
+  &::before {
+    transform: scaleY(1);
+  }
+}
+
 </style>
