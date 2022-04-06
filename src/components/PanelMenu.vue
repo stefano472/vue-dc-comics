@@ -1,5 +1,5 @@
 <template>
-  <div class="panel_menu">
+  <div class="panel-menu">
     <div class="container">
       <ul class="menu">
         <li>
@@ -45,7 +45,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.panel_menu {
+.panel-menu {
   background: #0282f9;
 }
 .menu {
@@ -53,7 +53,7 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem 0;
+  padding: 2rem 0;
   li:last-child img {
     height: 1.7rem;
   }

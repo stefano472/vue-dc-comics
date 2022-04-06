@@ -18,4 +18,8 @@ main {
   color: white;
   background: #1c1c1c;
 }
+
+h1 {
+  padding: 2rem 0;
+}
 </style>
