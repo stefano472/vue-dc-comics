@@ -80,9 +80,11 @@ main {
       font-weight: 700;
       padding:  0.5rem 1.5rem;
       background: #0282f9;
+      transition: 0.3s;
       cursor: pointer;
       &:hover {
           box-shadow: inset 0px 0px 0 2px;
+          border-radius: 5px;
       }
     }
   }

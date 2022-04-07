@@ -44,7 +44,7 @@ img {
     // object-position: top;
 }
 h5 {
-    padding-top: 0.5rem;
+    padding-top: 0.6rem;
     font-size: 0.8rem;
     text-transform: uppercase;
     color: #0075f9;
@@ -54,7 +54,8 @@ h5 {
 h2 {
     text-transform: uppercase;
     word-break: break-word;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    padding: 0.3rem 0;
 }
 p {
     font-size: 0.9rem;
