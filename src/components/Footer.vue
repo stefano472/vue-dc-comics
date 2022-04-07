@@ -104,27 +104,27 @@
           <ul class="menu">
             <li>
               <a href="#">
-                <img src="../assets/footer-facebook.png" alt="facebook">
+                <img src="@/assets/img/footer-facebook.png" alt="facebook">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="../assets/footer-twitter.png" alt="twitter">
+                <img src="@/assets/img/footer-twitter.png" alt="twitter">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="../assets/footer-youtube.png" alt="youtube">
+                <img src="@/assets/img/footer-youtube.png" alt="youtube">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="../assets/footer-pinterest.png" alt="pinterest">
+                <img src="@/assets/img/footer-pinterest.png" alt="pinterest">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="../assets/footer-periscope.png" alt="periscope">
+                <img src="@/assets/img/footer-periscope.png" alt="periscope">
               </a>
             </li>
           </ul>       
@@ -144,14 +144,14 @@ export default {
 <style scoped lang="scss">
 
 .hero-footer {
-  background-image: url("../assets/footer-bg.jpg");
+  background-image: url("@/assets/img/footer-bg.jpg");
   background-size: cover;
 
   .container {
     padding: 1rem 0;
     display: flex;
     gap: 2rem;
-    background-image: url("../assets/dc-logo-bg.png");
+    background-image: url("@/assets/img/dc-logo-bg.png");
     background-repeat: no-repeat;
     background-position: center right;
     background-size: 450px;

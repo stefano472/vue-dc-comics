@@ -3,44 +3,15 @@
       <div class="container">
         <div class="header-logo">
           <a href="">
-            <img src="../assets/dc-logo.png" alt="logo">
+            <img src="@/assets/img/dc-logo.png" alt="logo">
           </a>
         </div>
         <nav>
           <ul class="menu">
-            <li v-for="link in headerMenu" :key="link" :class="link==='comics'? 'active':''">
-              <a href="#"> {{ link }} </a>
+            <li v-for="link in headerMenu" :key="link.name" :class="link.active? 'active':''">
+              <a href="#"> {{ link.name }} </a>
             </li>
-            <!-- <li>
-              <a href="#">character</a>
-            </li>
-            <li class="active">
-              <a href="#">comics</a>
-            </li>
-            <li>
-              <a href="#">movies</a>
-            </li>
-            <li>
-              <a href="#">tv</a>
-            </li>
-            <li>
-              <a href="#">games</a>
-            </li>
-            <li>
-              <a href="#">collectibles</a>
-            </li>
-            <li>
-              <a href="#">videos</a>
-            </li>
-            <li>
-              <a href="#">fans</a>
-            </li>
-            <li>
-              <a href="#">news</a>
-            </li>
-            <li>
-              <a href="#">shop</a>
-            </li> -->
+       
           </ul>
         </nav>
       </div>
@@ -52,7 +23,48 @@ export default {
   name: 'HeaderComponents',
   data() {
     return {
-      headerMenu: ["character", "comics", "movies", "tv", "games", "collectibles", "videos", "fans", "news", "shop"]
+      headerMenu: [
+        {
+          name: 'character',
+          active: false
+        }, 
+        {
+          name: 'comics',
+          active: true
+        }, 
+        {
+          name: 'movies',
+          active: false
+        }, 
+        {
+          name: 'tv',
+          active: false
+        }, 
+        {
+          name: 'games',
+          active: false
+        }, 
+        {
+          name: 'collectibles',
+          active: false
+        }, 
+        {
+          name: 'videos',
+          active: false
+        }, 
+        {
+          name: 'fans',
+          active: false
+        }, 
+        {
+          name: 'news',
+          active: false
+        }, 
+        {
+          name: 'shop',
+          active: false
+        }
+      ]
     }
   }
 }
@@ -60,6 +72,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
 .container {
   display: flex;
   align-items: center;
@@ -73,7 +86,7 @@ img {
 .menu {
   list-style-type: none;
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   position: relative;
   
   a{
