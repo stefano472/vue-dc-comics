@@ -1,9 +1,11 @@
 <template>
   <div class="card">
       <img :src="img" :alt="title">
-      <h5>{{ type }}</h5>
-      <h2>{{ title }}</h2>
-      <p>Price: {{ price }}</p>
+      <div class="definition">
+        <h5>{{ type }}</h5>
+        <h2>{{ title }}</h2>
+        <p>Price: {{ price }}</p>
+      </div>
   </div>
 </template>
 
@@ -22,6 +24,7 @@ export default {
 <style lang="scss" scoped>
 .card {
     flex-basis: calc(100% / 6 - 0.8rem * 5 / 6);
+    position: relative;
     display: flex;
     flex-direction: column;
     &:hover {
@@ -29,13 +32,14 @@ export default {
             color: #0075f9;
         }
         img {
-            opacity: 0.5;
+            opacity: 0.6;
+            // aspect-ratio: auto;
         }
     }
 }
 img {
     width: 100%;
-    // height: 8rem;
+    // aspect-ratio: 1/1;
     // object-fit: cover;
     // object-position: top;
 }
