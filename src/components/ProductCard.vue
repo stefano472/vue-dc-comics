@@ -35,6 +35,9 @@ export default {
 }
 img {
     width: 100%;
+    // height: 8rem;
+    // object-fit: cover;
+    // object-position: top;
 }
 h5 {
     padding-top: 0.5rem;
