@@ -2,7 +2,7 @@
     <header>
       <div class="container">
         <div class="header-logo">
-          <a href="">
+          <a href="#">
             <img src="@/assets/img/dc-logo.png" alt="logo">
           </a>
         </div>
@@ -19,58 +19,20 @@
 </template>
 
 <script>
+// data imported
+import headerMenu from '@/assets/data/headerMenu'
+
 export default {
   name: 'HeaderComponents',
   data() {
     return {
-      headerMenu: [
-        {
-          name: 'character',
-          active: false
-        }, 
-        {
-          name: 'comics',
-          active: true
-        }, 
-        {
-          name: 'movies',
-          active: false
-        }, 
-        {
-          name: 'tv',
-          active: false
-        }, 
-        {
-          name: 'games',
-          active: false
-        }, 
-        {
-          name: 'collectibles',
-          active: false
-        }, 
-        {
-          name: 'videos',
-          active: false
-        }, 
-        {
-          name: 'fans',
-          active: false
-        }, 
-        {
-          name: 'news',
-          active: false
-        }, 
-        {
-          name: 'shop',
-          active: false
-        }
-      ]
+      headerMenu,
     }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped lang="scss">
 
 .container {

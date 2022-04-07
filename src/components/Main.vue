@@ -1,26 +1,67 @@
 <template>
   <main>
+    <div class="hero">
+        <div class="container">
+          <div class="active-series">
+            CURRENT SERIES
+          </div>
+        </div>
+    </div>
     <div class="container">
-      <h1>--&gt; Content goes here &lt;-- </h1>
+      <div class="contents">
+        <ProductCard v-for="card in dcComics" :key="card.series" :img="card.thumb" :price="card.price" :title="card.series" :type="card.type"/>
+      </div>
+      <div class="more">
+        <button type="button">LOAD MORE</button>
+      </div>
     </div>
   </main>
 </template>
 
 <script>
+
+import dcComics from '@/assets/data/dc-comics'
+import ProductCard from '@/components/ProductCard'
+
 export default {
   name: 'MainComponents',
+  data() {
+    return {
+      dcComics,
+    }
+  }, 
+  components: {
+    ProductCard,
+  }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
 main {
   color: white;
   background: #1c1c1c;
+  .hero {
+    height: 20rem;
+    background-image: url("@/assets/img/jumbotron.jpg");
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    .active-series {
+      position: absolute;
+      transform: translateY(50%);
+      bottom: 0;
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 0.5rem 1rem;
+      border-radius: 1px;
+      background-color: #0282f9;
+    }
+  }
+  .contents {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-h1 {
-  padding: 2rem 0;
-}
 </style>

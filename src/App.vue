@@ -1,21 +1,29 @@
 <template>
   <div id="app">
     <Header/>
-    <Main/>
+    <Main />
     <PanelMenu/>
     <Footer/>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Main from './components/Main.vue'
-import PanelMenu from './components/PanelMenu.vue'
-import Footer from './components/Footer.vue'
+import Header from '@/components/Header.vue'
+import Main from '@/components/Main.vue'
+import PanelMenu from '@/components/PanelMenu.vue'
+import Footer from '@/components/Footer.vue'
+
+// data
+
 
 
 export default {
   name: 'App',
+  data() {
+    return {
+      // headerMenu
+    }
+  },
   components: {
     Header,
     Main,
