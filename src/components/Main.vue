@@ -61,6 +61,30 @@ main {
   .contents {
     display: flex;
     flex-wrap: wrap;
+    gap: 0.8rem;
+    padding: 1.5rem 0;
+    // ProductCard {
+    //   flex-basis: calc(100% / 6 - 0.8rem * 5 / 6);
+    //   display: flex;
+    //   flex-direction: column;
+    // }
+  }
+  .more {
+    padding: 1rem 0;
+    text-align: center;
+    button {
+      border: none;
+      border-radius: 1px;
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding:  0.5rem 1.5rem;
+      background: #0282f9;
+      cursor: pointer;
+      &:hover {
+          box-shadow: inset 0px 0px 0 2px;
+      }
+    }
   }
 }
 

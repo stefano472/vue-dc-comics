@@ -13,17 +13,8 @@ import Main from '@/components/Main.vue'
 import PanelMenu from '@/components/PanelMenu.vue'
 import Footer from '@/components/Footer.vue'
 
-// data
-
-
-
 export default {
   name: 'App',
-  data() {
-    return {
-      // headerMenu
-    }
-  },
   components: {
     Header,
     Main,

@@ -19,11 +19,25 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+.card {
+    flex-basis: calc(100% / 6 - 0.8rem * 5 / 6);
+    display: flex;
+    flex-direction: column;
+    &:hover {
+        h2 {
+            color: #0075f9;
+        }
+        img {
+            opacity: 0.5;
+        }
+    }
+}
 img {
-    transform: scale(0.9);
+    width: 100%;
 }
 h5 {
+    padding-top: 0.5rem;
     font-size: 0.8rem;
     text-transform: uppercase;
     color: #0075f9;
@@ -32,11 +46,13 @@ h5 {
 }
 h2 {
     text-transform: uppercase;
+    word-break: break-word;
+    font-size: 1.3rem;
 }
 p {
+    font-size: 0.9rem;
     color: #66e06b;
     font-weight: 700;
     text-transform: uppercase;
-
 }
 </style>
